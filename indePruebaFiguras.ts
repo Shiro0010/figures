@@ -1,13 +1,16 @@
 //circulo
-import { Circulo } from "./Circulo";
-let radioCirculo : number = 5;
+import { Circulo } from './circulo';
+let radioCirculo: number = 5;
 let miCirculo: Circulo = new Circulo(radioCirculo);
+
 let areaDelCirculo: number = miCirculo.calcularArea();
+let perimetroCirculo: number = miCirculo.calcularPerimetro();
 
- console.log("Elarea del circulo con radio", radioCirculo, " es ", areaDelCirculo)
-
+console.log("El área del círculo con radio", radioCirculo, "es", areaDelCirculo.toFixed(2));
+console.log("El perímetro del círculo con radio", radioCirculo, "es", perimetroCirculo.toFixed(2));
 //rectangulo
-import{ rectangulo }from './rectangulo/rectangulo';
+
+import { rectangulo }from './rectangulo/rectangulo';
 
 let a = new rectangulo(10,5);
 console.log(a.calcularAreaRectangulo());
