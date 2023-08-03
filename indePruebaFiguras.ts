@@ -7,7 +7,7 @@ let areaDelCirculo: number = miCirculo.calcularArea();
  console.log("Elarea del circulo con radio", radioCirculo, " es ", areaDelCirculo)
 
 //rectangulo
-import{ Rectangulo }from './Rectangulo';
+import{ rectangulo }from './rectangulo/rectangulo';
 
 let a = new rectangulo(10,5);
 console.log(a.calcularAreaRectangulo());
@@ -28,3 +28,16 @@ if (Cuadrado1.getLados() < 1)
 else{
     console.log("\nEl area del cuadrado es: " , Cuadrado1.areaCuadrado())
     console.log("\nEl perimetro del area es: " , Cuadrado1.perimetroCuadrado())}
+//triangulo
+import { TrianguloRectangulo } from "./Manuel Chaux/triangulo";
+
+let rect = new TrianguloRectangulo(10, 10)
+console.log("el area del triangulo es igual a: ", rect.calcularArea());
+console.log("la hipotenusa del triagnulo es igual a: ", rect.DeterminarHipotenusa());
+console.log("el perimetro del triagulo e igual a: ", rect.calcularPerimetrow());
+if (rect.DeterminarTipoTriangulo() == 1){
+    console.log("el tipo de triangulo es isoceles");
+} else { 
+    console.log("el tipo de triangulo es escaleno");    
+}
+
