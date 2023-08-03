@@ -56,3 +56,13 @@ const perimetro = rombo.calcularPerimetro();
 
 console.log("Área del rombo:", area);
 console.log("Perímetro del rombo:", perimetro);
+
+//Trapecio
+import { Trapecio } from './Trapecio';
+
+const trapecio = new Trapecio(10, 6, 4);
+const areaTrapecio = trapecio.calcularArea();
+const perimetroTrapecio = trapecio.calcularPerimetro();
+
+console.log("Área del trapecio:", areaTrapecio);
+console.log("Perímetro del trapecio:", perimetroTrapecio);
