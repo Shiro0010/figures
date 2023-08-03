@@ -7,7 +7,7 @@ let areaDelCirculo: number = miCirculo.calcularArea();
  console.log("Elarea del circulo con radio", radioCirculo, " es ", areaDelCirculo)
 
 //rectangulo
-import{ Rectangulo }from './Rectangulo';
+import{ rectangulo }from './Rectangulo/rectangulo';
 
 let a = new rectangulo(10,5);
 console.log(a.calcularAreaRectangulo());
