@@ -44,3 +44,15 @@ if (rect.DeterminarTipoTriangulo() == 1){
     console.log("el tipo de triangulo es escaleno");    
 }
 
+//Rombo 
+import { Rombo } from './Rombo';
+const diagonal1 = 8;
+const diagonal2 = 10;
+const longitudLado = 5;
+
+const rombo = new Rombo(diagonal1, diagonal2, longitudLado);
+const area = rombo.calcularArea();
+const perimetro = rombo.calcularPerimetro();
+
+console.log("Área del rombo:", area);
+console.log("Perímetro del rombo:", perimetro);
